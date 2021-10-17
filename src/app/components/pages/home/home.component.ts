@@ -6,17 +6,16 @@ import { DataService } from 'src/app/services/data/data.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent{
 
   constructor(private dataService: DataService) { }
 
   repos$ = this.dataService.repos$;
   isSearched: Boolean = false;
   
-  ngOnInit(): void {}
 
 
-  async searchValues(values:any){
+  searchValues(values:any){
     this.dataService.getDataByTopicAndStars(values.topic, values.stars).toPromise().then(res => {
       this.isSearched = true
     });

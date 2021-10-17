@@ -7,14 +7,10 @@ import { Repo } from 'src/app/shared/interfaces/data.interface';
   templateUrl: './listing.component.html',
   styleUrls: ['./listing.component.css']
 })
-export class ListingComponent implements OnInit {
+export class ListingComponent {
   @Input() repos$: Observable<Repo[]>;
   @Input() isSearched: Boolean;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   goToLink(url:string){
     window.open(url, "_blank");
