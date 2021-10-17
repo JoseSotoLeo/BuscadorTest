@@ -1,0 +1,15 @@
+.info-list{
+    padding-bottom: 4rem;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 1rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <app-searcher (searchValues)="searchValues($event)"></app-searcher>
+        </div>
+        <div class="col">
+            <app-listing [repos$]="repos$" [isSearched]="isSearched"></app-listing>
+        </div>
+    </div>
+</div>

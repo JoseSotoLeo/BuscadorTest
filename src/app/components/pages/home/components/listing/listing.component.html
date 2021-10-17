@@ -1,0 +1,15 @@
+
+<div class="container" *ngIf="(repos$ | async)!.length > 0 else norepos">
+    <div class="info-container" *ngFor="let repo of repos$ | async">
+        <div class="description row">
+            <div class="col">{{repo.name}}: {{repo.description}} </div>
+            <div class="col">
+                <a mat-icon-button (click)="goToLink(repo.url)"><mat-icon>arrow_forward</mat-icon></a>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+    </div>
+</div>
+<ng-template #norepos>
+    {{isSearched ? "No data found. Please try another thing :(" : ""}}
+</ng-template>

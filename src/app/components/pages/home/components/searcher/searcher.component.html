@@ -1,0 +1,14 @@
+<div class="container">
+    <form [formGroup]="searchForm" class="search-form">
+        <mat-form-field appearance="legacy">
+            <mat-label>Topic</mat-label>
+            <input matInput placeholder="Select a topic" formControlName="topic">
+        </mat-form-field>
+        <mat-form-field appearance="legacy">
+            <mat-label>Stars</mat-label>
+            <input matInput type="number" placeholder="Select a base star rating" formControlName="stars">
+        </mat-form-field>
+        <button mat-stroked-button (click)="search($event)" [disabled]="!searchForm.valid">Search!</button>
+    </form>
+    
+</div>
