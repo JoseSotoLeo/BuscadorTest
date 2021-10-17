@@ -3,8 +3,6 @@
 // The list of file replacements can be found in `angular.json`.
 
 
-
-//TESTING TOKEN --> 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
 export const environment = {
   TESTING_API_TOKEN: '',
   production: false
