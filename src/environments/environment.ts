@@ -2,8 +2,11 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+
+
+//TESTING TOKEN --> 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
 export const environment = {
-  TESTING_API_TOKEN: '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',
+  TESTING_API_TOKEN: '',
   production: false
 };
 
